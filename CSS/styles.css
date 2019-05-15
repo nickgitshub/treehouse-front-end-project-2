@@ -1,0 +1,181 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+
+
+body{
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+}
+
+
+h2{
+	text-align: center;
+	font-size: 1.75em; 
+}
+
+h3{
+	text-align: center; 
+	font-size: 1.25em; 
+}
+
+p{
+	font-size: 1em;
+}
+
+
+ul{
+	padding-inline-start: 0px;
+	text-align: center; 
+}
+
+img{
+	max-width:100%
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header{
+	width: 100%;
+	background-color: #CC7700;
+	position: fixed; 
+	line-height: .5em; 
+	
+}
+
+.main-title{
+	float: left;
+	padding: .5em 0 0 .5em 
+}
+
+.nav-list{
+	float: right;
+	padding: .5em 0 0 .5em 
+}
+
+.nav-list h2{
+	font-size: 1.25em; 
+}
+
+.nav-list li{
+	display: inline-block;
+	margin-left: 15px; 
+	
+}
+
+/* ---- Intro Banner ---- */
+
+.intro-banner{
+	padding-top: 4em; 
+	background-color: lightgrey; 
+}
+
+.intro-banner img{
+	float: right;
+}
+
+.intro-banner p{
+	float: left;
+	padding: 1em;
+	margin: 4em; 
+	background-color: black;
+}
+
+/* ---- Portfolio Section ---- */
+
+.portfolio li{
+	display: inline-block;
+	}
+
+.portfolio li:nth-child(2n){
+	margin-left: 3.3%; 
+}
+
+/* ---- Contact ---- */
+
+.contact-text-wrapping{
+	text-align: center;
+	background-color: lightgrey;
+	padding: 1em;
+
+}
+
+.contact-text-wrapping p{
+	margin-bottom: 0; 
+	margin-top: 0; 
+	font-size: 1em; 
+}
+
+
+
+/* ---- Footer ---- */
+
+.main-footer{
+	width: 100%;
+	padding: .5em; 
+	background-color: #A64500;
+	line-height: .5em;
+}
+
+
+
+.main-footer h3{
+	font-size: .85em; 
+}
+
+.main-footer ul{
+	margin: 0px; 
+
+}
+
+.main-footer li{
+	display: inline-block;
+	padding: 0 .5em 0 0.5em; 
+}
+
+
+
+/* ---- Layout Containers ---- */
+
+.main-wrapper{
+	padding: 0em 1em;
+}
+
+/* ---- Page Elements ---- */
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 768px){
+	.portfolio li{
+		width: 40%;
+	}
+
+
+
+}
+
+@media (min-width: 1024px){
+
+
+
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
