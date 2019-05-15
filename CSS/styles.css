@@ -8,9 +8,13 @@
 body{
 	font-family: 'Lato', sans-serif;
 	line-height: 1.6;
-	margin: 0;
+	margin: 0 auto;
 }
 
+h1{
+	margin-block-start: 0.67em;
+    margin-block-end: -.5em;
+}
 
 h2{
 	text-align: center;
@@ -33,7 +37,7 @@ ul{
 }
 
 img{
-	max-width:100%
+	max-width:100%;
 }
 
 
@@ -42,7 +46,8 @@ img{
   Base Layout Styles
 ==================================== */
 
-/* ---- Navigation ---- */
+
+/* ---- Header ---- */
 
 .main-header{
 	width: 100%;
@@ -53,41 +58,44 @@ img{
 }
 
 .main-title{
-	float: left;
-	padding: .5em 0 0 .5em 
+	text-align: center;
+	padding-top: .45em;
 }
+
+
+/* ---- Navigation ---- */
 
 .nav-list{
-	float: right;
-	padding: .5em 0 0 .5em 
-}
+	padding: .5em 0 0 .5em; 
+	}	
 
-.nav-list h2{
-	font-size: 1.25em; 
+.nav-list a {
+	font-size: .75em; 
+	color: black;
+	text-decoration: none; 
 }
-
-.nav-list li{
-	display: inline-block;
-	margin-left: 15px; 
 	
-}
+.nav-list a:hover {
+		color: white;
+	}
+
 
 /* ---- Intro Banner ---- */
 
 .intro-banner{
-	padding-top: 4em; 
-	background-color: lightgrey; 
+	padding-top: 9.5em;
+	text-align: center;
+	background-color: #DCDCDC;
 }
 
 .intro-banner img{
-	float: right;
+	
 }
 
 .intro-banner p{
-	float: left;
-	padding: 1em;
-	margin: 4em; 
-	background-color: black;
+	margin: 4em 0em 2em 0em; 
+	padding: 1em; 
+	color: #708090; 
 }
 
 /* ---- Portfolio Section ---- */
@@ -96,8 +104,24 @@ img{
 	display: inline-block;
 	}
 
-.portfolio li:nth-child(2n){
-	margin-left: 3.3%; 
+/* ---- Portfolio Section ---- */
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
 }
 
 /* ---- Contact ---- */
@@ -126,16 +150,21 @@ img{
 	line-height: .5em;
 }
 
-
-
-.main-footer h3{
-	font-size: .85em; 
-}
-
 .main-footer ul{
 	margin: 0px; 
 
 }
+
+.main-footer a {
+	font-size: .65em; 
+	color: black;
+	text-decoration: none; 
+}
+	
+.main-footer a:hover {
+		color: white;
+	}
+
 
 .main-footer li{
 	display: inline-block;
@@ -158,16 +187,94 @@ img{
 
 
 @media (min-width: 768px){
-	.portfolio li{
-		width: 40%;
+
+	/* ---- Header ---- */
+
+	.main-header{
+		line-height: .5em; 
+	
 	}
 
+	.main-title{
+		float:left;
+		margin: 1em 
+	}
+
+
+	.intro-banner{
+		padding-top: 5em;
+	}
+
+	.intro-banner img{
+		width: 35%; 
+		margin: 2em;
+		float: left; 
+
+	}
+
+	.intro-banner p{
+		width: 35%; 
+		float:right;
+		margin: 2em; 
+	}
+
+	
+
+	.nav-list{
+		float: right;
+		padding: .5em 0 0 .5em; 
+		margin-right: 1em;
+	}	
+
+
+	.nav-list li{
+	display: inline-block;
+	margin-left: 15px; 
+	}
+
+	.portfolio li{
+		width: 40%;
+		margin: auto; 
+	}
+	
+	.portfolio li:nth-child(2n){
+		margin-left: 3.3%;  
+	}
+
+	.main-footer a {
+	font-size: .95em; 
+	color: black;
+	text-decoration: none; 
+}
 
 
 }
 
 @media (min-width: 1024px){
 
+	
+
+	.portfolio li{
+		width: 29%;
+		margin-left: 3.3%;
+	}
+	
+	.portfolio li:nth-child(3n+1){
+	 	margin-left:auto;
+	}
+
+	.intro-banner img{
+		width: 40%; 
+		margin: 2em;
+		float: left; 
+
+	}
+
+	.intro-banner p{
+		width: 40%; 
+		float:right;
+		margin: 2em; 
+	}
 
 
 }
